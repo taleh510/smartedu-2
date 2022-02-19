@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <title>Test</title>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="img/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="nav-bar">
+            <ul>
+              <li><a href="about.html">İmtahanlarım</a></li>
+              <li><a href="articles.html">Nəticələrim</a></li>
+            </ul>
+          </div>
+          <div class="header-btns">
+            <div class="dropdown">
+              <button
+                class="dropdown-btn btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="img/profile.svg" alt="" />
+                <p>Əliyeva Nəzrin</p>
+                <img src="img/Vector 1.svg" alt="" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Hesabım</a>
+                <a class="dropdown-item" href="#">Çıxış et</a>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu">
+            <i class="fas fa-bars openBtn" onclick="openNav()"></i>
+            <div class="overlay-content" id="overlay">
+              <i class="fas fa-times closeBtn" onclick="closeNav()"></i>
+              <ul>
+                <li><a href="about.html">İmtahanlarım</a></li>
+                <li><a href="articles.html">Nəticələrim</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <section class="test">
+      <div class="container">
+        <div class="test-top">
+          <div class="test-head">
+            <h1>11-ci Sinif Buraxılış İmtahanı</h1>
+          </div>
+          <div class="test-date">
+            <p>İmtahan başladı: 11:00</p>
+            <p>Qalan vaxt: 00.00.00</p>
+          </div>
+        </div>
+        <div class="test-bottom">
+          <div class="test-bottom-items">
+            <div class="test-bottom-item">
+              <div class="test-bottom-content">
+                <div class="test-question">
+                  <p>İsmin hansı halında olan sözlər yalnız feili xəbərli cümlələrdə işlənir?</p>
+                </div>
+                <div class="test-answer">
+                  <div class="test-answer-groups">
+                    <div class="test-answer-group">
+                      <input type="radio" name="answer">
+                      <label for="">HTML</label>
+                    </div>
+                    <div class="test-answer-group">
+                      <input type="radio" name="answer">
+                      <label for="">HTML</label>
+                    </div>
+                    <div class="test-answer-group">
+                      <input type="radio" name="answer">
+                      <label for="">HTML</label>
+                    </div>
+                    <div class="test-answer-group">
+                      <input type="radio" name="answer">
+                      <label for="">HTML</label>
+                    </div>
+                    <div class="test-answer-group">
+                      <input type="radio" name="answer">
+                      <label for="">HTML</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="test-bottom-item">
+              <div class="test-bottom-content">
+                <div class="test-question">
+                  <p>İsmin hansı halında olan sözlər yalnız feili xəbərli cümlələrdə işlənir?</p>
+                </div>
+                <div class="test-answer open-question">
+                  <div class="open-question-answer">
+                    <p>Cavab</p>
+                    <textarea name="" id=""></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="test-bottom-item">
+              <div class="test-bottom-content">
+                <div class="test-question">
+                  <p>İsmin hansı halında olan sözlər yalnız feili xəbərli cümlələrdə işlənir?</p>
+                </div>
+                <div class="voice-question">
+                  <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                  </audio>
+                </div>
+                <div class="test-answer open-question">
+                  <div class="open-question-answer">
+                    <p>Cavab</p>
+                    <textarea name="" id=""></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Footer start -->
+    <footer>
+      <div class="container">
+        <div class="footer-items">
+          <a href="index.html">
+            <img src="img/page-logo.png" alt="" />
+          </a>
+          <p>
+            Powered by Deirvlon Technologies <br />
+            www.deirvlon.com
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var b = 0;
+      $(window).scroll(function () {
+        var bTop = $("#control").offset().top - window.innerHeight;
+        if (b == 0 && $(window).scrollTop() > bTop) {
+          $(".ad1").addClass("item-control1");
+          $(".ad2").addClass("control-line1");
+          $(".ad3").addClass("item-control2");
+          $(".ad4").addClass("control-line2");
+          $(".ad5").addClass("item-control3");
+          b = 1;
+        }
+      });
+      function openNav() {
+        document.querySelector(".overlay-content").style.width = "100%";
+      }
+      function closeNav() {
+        document.querySelector(".overlay-content").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
